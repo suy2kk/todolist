@@ -6,6 +6,8 @@ import store from './redux/store';
 import {BrowserRouter as Router} from 'react-router-dom';
 import App from 'components/App/App';
 
+import 'antd/dist/antd.css';
+
 renderWithHotReload(App);
 
 if (module.hot) {

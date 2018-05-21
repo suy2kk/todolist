@@ -20,16 +20,16 @@ const devConfig = {
     module: {
         rules: [{
             test: /\.css$/,
-            use: ["style-loader", "css-loader?modules&localIdentName=[local]-[hash:base64:5]", "postcss-loader"]
+            use: ["style-loader", "css-loader", "postcss-loader"]
         }]
     },
     devServer: {
-        port: 8080,
+        port: 8090,
         contentBase: path.join(__dirname, './dist'),
         historyApiFallback: true,
         host: '0.0.0.0',
         proxy: {
-            "/api/*": "http://localhost:8090/$1"
+            "/api/*": "http://localhost:8091/$1"
         }
     }
 };

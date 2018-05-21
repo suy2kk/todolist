@@ -1,7 +1,7 @@
 {
   "name": "react-family",
   "version": "1.0.0",
-  "description": "react全家桶",
+  "description": "react stocks",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,7 +19,7 @@
     "es6",
     "react-family"
   ],
-  "author": "brickspert",
+  "author": "dannychan1995",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -43,17 +43,20 @@
     "style-loader": "^0.18.2",
     "uglifyjs-webpack-plugin": "^0.4.6",
     "url-loader": "^0.5.9",
-    "webpack": "^3.5.5",
+    "webpack": "3",
     "webpack-dev-server": "^2.7.1",
     "webpack-merge": "^4.1.0"
   },
   "dependencies": {
+    "antd": "^3.5.2",
     "axios": "^0.16.2",
+    "babel-plugin-import": "^1.7.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0"
-  }
+  },
+  "repository": "https://github.com/dannychan1995/react-family"
 }
