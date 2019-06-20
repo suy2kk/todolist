@@ -7,6 +7,7 @@ import Loading from 'components/Loading/Loading';
 
 import Home from 'bundle-loader?lazy&name=home!pages/Home/Home';
 import Page1 from 'bundle-loader?lazy&name=page1!pages/Page1/Page1';
+import Todolist from 'bundle-loader?lazy&name=Todolist!pages/Todolist/Todolist';
 import Counter from 'bundle-loader?lazy&name=counter!pages/Counter/Counter';
 import UserInfo from 'bundle-loader?lazy&name=userInfo!pages/UserInfo/UserInfo';
 import NotFound from 'bundle-loader?lazy&name=notFound!pages/NotFound/NotFound';
@@ -26,6 +27,8 @@ export default () => (
             <Route path="/page1" component={createComponent(Page1)}/>
             <Route path="/counter" component={createComponent(Counter)}/>
             <Route path="/userinfo" component={createComponent(UserInfo)}/>
+            <Route path="/todolist" component={createComponent(Todolist)}/>
+            
             <Route component={createComponent(NotFound)}/>
         </Switch>
     </div>
